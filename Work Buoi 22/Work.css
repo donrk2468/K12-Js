@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    margin: 40px;
+    background: blueviolet;
+    width: 180px;
+    height: 220px;
+    border-radius: 10px;
+    transform: skew(-8deg);
+    transition: all 2s;
+  }
+  .item {
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+    position: relative;
+  }
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .item:hover .card {
+    transform: translate(15px, -15px);
+  }
+  .card:hover .arrow,
+  .card:hover .title {
+    display: block;
+  }
+  .title {
+    display: none;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    font-weight: 800;
+    font-size: 20px;
+    color: white;
+  }
+  .arrow {
+    display: none;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    color: white;
+    background: blueviolet;
+    padding: 8px;
+    border-radius: 50%;
+    transform: skew(8deg);
+  }
+  
